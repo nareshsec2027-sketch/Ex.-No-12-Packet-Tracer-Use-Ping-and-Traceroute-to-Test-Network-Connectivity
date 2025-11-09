@@ -1,5 +1,5 @@
 # Ex. No: 12 – Packet Tracer: Use Ping and Traceroute to Test Network Connectivity
-# Date: ______________________
+# Date:04.10.25
 ________________________________________<br>
 # Objective
 To test and restore IPv4 and IPv6 network connectivity using diagnostic commands (ping and tracert), identify faults, and verify proper routing between end devices in a dual-stack (IPv4 + IPv6) topology.<br>
@@ -15,9 +15,8 @@ ________________________________________<br>
 • 4 PCs (PC1–PC4)<br>
 • Copper straight-through and serial DCE/DTE cables<br>
 ________________________________________<br>
-# Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1 ↔ R2 ↔ R3 with PCs PC1–PC4 connected.)<br>
-________________________________________<br>
+# Network Topology
+
 Addressing Table<br>
 Device	Interface	IPv4 Address / Subnet Mask	IPv6 Address / Prefix	Default Gateway<br>
 R1	G0/0	10.10.1.97 / 255.255.255.224	2001:db8:1:1::1/64	N/A<br>
@@ -118,10 +117,14 @@ show ip interface brief	Verify IPv4 interface status<br>
 show ipv6 interface brief	Verify IPv6 interface status<br>
 ________________________________________
 # Output (Attach Screenshots)
-• Command outputs (ipconfig, ipv6config, ping, tracert) for PCs.<br>
-• Router interface and routing tables.<br>
-• Successful ping results after fixes.<br>
-________________________________________<br>
+<img width="1919" height="1071" alt="Screenshot 2025-11-04 115705" src="https://github.com/user-attachments/assets/21cc4f51-dae3-4fe0-8257-ecc94bf22382" />
+<img width="1919" height="1078" alt="Screenshot 2025-11-04 115753" src="https://github.com/user-attachments/assets/182ae40b-d45d-4392-8a0d-679e036b9893" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-04 115902" src="https://github.com/user-attachments/assets/ee9cd56f-9a22-484b-8895-35a59f8ae39a" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-04 120025" src="https://github.com/user-attachments/assets/8a776b5c-706a-45fb-b2c9-1cba82b19eec" />
+<img width="1919" height="1079" alt="Screenshot 2025-11-04 120111" src="https://github.com/user-attachments/assets/ee354a8b-615c-4475-818f-ad510d5d4861" />
+
+
+
 # Result
 IPv4 and IPv6 connectivity issues were diagnosed and resolved using ping and tracert commands. Routers and PCs achieved full dual-stack communication after correcting configuration errors, confirming network restoration and routing accuracy.<br>
 
